@@ -1,0 +1,1987 @@
+/*
+* Frontend Style Lite Version 1.0.5
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+/*============================
+    DEFAULT CSS
+=============================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0; 
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+/*============================
+    Global Default CTA BUILDER CONTAINER 
+=============================*/
+
+.site-content{
+    overflow: hidden;
+}
+
+.ictab-main-container-wrap,
+.ictab-main-container-wrap *,
+*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;   
+}
+.ictab-clearfix:before,
+.ictab-clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+    flex-basis: 0;
+    order: 1;
+}
+
+.ictab-hide-btn-ondesktop{
+    display: none !important;
+}
+
+.ictab-custom-template-wrap .ictab-inner-wrapper{
+    max-width: 100%;
+    max-height: 1500px;
+    min-height: 500px;
+} 
+.ictab-inner-content.ictab-cta-builder {
+    z-index: 999;
+}
+.ictab-bgslider-wrap {
+    max-height: auto !important;
+    /*height: auto !important;*/
+}
+.ictab-inner-wrapper.ictab-bgimage-wrap{
+    background-size: cover;
+}
+
+.ictab-left-content-wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.ictab-right-content-wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.ictab-double-content-wrapper .ictab-video-wrap iframe {
+    min-height: 358px;
+    margin-bottom: 0;
+}
+.ictab-single-content-wrapper .ictab-video-wrap iframe{
+    min-height: 358px;
+    margin-bottom: 0;
+}
+.ictab-main-container-wrap .ictab-common-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ictab-popup-content-wrapper,
+.ictab-shortcode-popup-wrap{
+    display: none;
+}
+
+/* Input Field Default Value */
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline:0;
+}
+
+
+/*============================
+    Global Default CTA CONTENT CONTAINER 
+=============================*/
+
+
+.ictab-main-container-wrap{
+    position: relative;
+}
+.ictab-available-template-wrap .ictab-inner-wrapper{
+    width: 100%;
+    max-height: 1500px;
+    padding: 120px 0;
+    background-repeat: no-repeat;   
+    overflow: hidden;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+.ictab-available-template-wrap .ictab-inner-wrapper .ictab-single-content-wrapper{
+    max-width: 1180px;
+    width: 100%;    
+    height: 100%;
+    margin: 0 auto;    
+    color: #fff;
+    position: relative;
+    z-index: 333;
+    padding: 0 10px;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;  
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+           -ms-flex-direction: column;
+               flex-direction: column;   
+}
+
+
+.ictab-available-template-wrap{
+    width: 100%;    
+    position: relative; 
+}
+
+.ictab-available-template-wrap .ictab-single-content-wrapper h3{
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 20px;
+    position : relative;
+}
+
+.ictab-available-template-wrap .ictab-double-content-wrapper .ictab-header-text-wrap h3{
+    margin: 0;
+    margin-bottom: 20px;
+    position : relative;
+    line-height: normal;
+}
+
+.ictab-available-template-wrap .ictab-description-content-wrap{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.ictab-available-template-wrap .ictab-inner-wrapper .ictab-double-content-wrapper{
+    max-width: 1170px;
+    width: 100%;    
+    height: 100%;
+    margin: 0 auto; 
+    padding: 0 15px;
+    position: relative;
+    z-index: 333;
+    color: #fff;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;   
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+           -ms-flex-direction: column;
+               flex-direction: column;    
+}
+
+
+.ictab-available-template-wrap .ictab-inner-wrapper .ictab-content-wrap-section{
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+}
+
+.ictab-video-wrap{
+    position: relative;
+}
+
+.ictab-popup-video-wrap a img{
+    width: 100%;
+}
+
+.ictab-overlay-video-popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);   
+    cursor: pointer;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;   
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+           -ms-flex-direction: column;
+               flex-direction: column; 
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+
+.ictab-overlay-video-popup:before{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;    
+}
+
+.ictab-overlay-video-popup:hover::before{
+    width: 60px;
+    height: 60px;  
+}
+
+.ictab-overlay-video-popup:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 25px solid #fff;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+
+.ictab-overlay-video-popup:hover::after{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);    
+}
+
+.ictab-popup-content-wrapper{
+    opacity: 0;
+}
+
+.ictab-open-popup{
+    opacity: 1;
+    display: block;
+}
+
+/*============================
+    Normalize Buttons
+=============================*/
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap{
+    cursor: pointer;
+    position: relative; 
+    line-height: 0;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    display: block; 
+    line-height: normal;
+    position: relative;
+    margin-right: 15px;
+    float: left;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap:last-of-type{
+    margin-right: 0;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a{    
+    display: block;    
+    padding: 12px 35px; 
+    text-decoration:none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 0;
+    text-transform: normal;
+    position: relative;
+    overflow: visible;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;    
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left i{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right i{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top i{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a.ictab_show_only_text i{
+    display: none;
+}
+
+a.ictab_show_only_icon span{
+    display: none;
+}
+
+/* Animation Reveal Left */
+
+.ictab-ctabbutton-wrap .ictab-icon-position-left img{
+    margin-right: 10px;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal{
+    position: relative;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal img{
+    position: absolute;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;    
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal i{
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    -webkit-transform: translate3d(-50px, 2px, 0);
+    transform: translate3d(-50px, 2px, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal:hover img{
+  -webkit-transform: translate3d(0px, 0, 0);
+   transform: translate3d(0px, 0, 0);
+   opacity: 1;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal:hover i{
+   -webkit-transform: translate3d(0, 2px, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+    
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal span{
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-left a.button-reveal:hover span{
+    -webkit-transform: translateX(10px); /* Equal to translate(10px) */
+  transform: translateX(10px); /* Equal to translate(10px) */
+}
+
+
+
+/* Animation Reveal Top */
+
+.ictab-ctabbutton-wrap .ictab-icon-position-top img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 3;
+}
+
+.ictab-ctabbutton-wrap .ictab-icon-position-top i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal{
+    position: relative;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal img{
+    position: absolute;
+    left: -15px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    margin: 0 auto;
+    -webkit-transform: translate3d(50%, -50px, 0);
+    transform: translate3d(50%, -50px, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal i{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    font-size: 18px;
+    font-size: 1.125rem;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal:hover img{
+  -webkit-transform: translate3d(0, -8px, 0);
+   transform: translate3d(0, -8px, 0);
+   opacity: 1;
+   left: 0;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal:hover i{
+   -webkit-transform: translate3d(0, -9px, 0);
+    transform: translate3d(0, -9px, 0);
+  opacity: 1;
+}
+    
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal span{
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-top a.button-reveal:hover span{
+    -webkit-transform: translateY(8px); /* Equal to translate(10px) */
+  transform: translateY(8px); /* Equal to translate(10px) */
+}
+
+
+
+/* Animation Reveal right for image */
+
+.ictab-ctabbutton-wrap .ictab-icon-position-right img{
+    margin-left: 10px;
+}
+
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal{
+    position: relative;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal img{
+    position: absolute;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    -webkit-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal i{
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    font-size: 1.125rem;
+    -webkit-transform: translate3d(50px, 2px, 0);
+    transform: translate3d(50px, 2px, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal:hover img{
+  -webkit-transform: translate3d(0px, 0, 0);
+   transform: translate3d(0px, 0, 0);
+   opacity: 1;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal:hover i{
+   -webkit-transform: translate3d(0, 2px, 0);
+  transform: translate3d(0, 2px, 0);
+  opacity: 1;
+}
+    
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal span{
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-icon-position-right a.button-reveal:hover span{
+    -webkit-transform: translateX(-10px); /* Equal to translate(10px) */
+  transform: translateX(-10px); /* Equal to translate(10px) */
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a.button-transparent-border::before{
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a.button-reveal-icon-hide-text:hover i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: translate3d(-50%, -200%, 0);
+  transform: translate3d(-50%, -200%, 0);
+}
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a.button-reveal-icon-hide-text:hover > span {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a.button-border-highlight:hover::before {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap a.button-border-highlight {
+  overflow: hidden !important;
+}
+
+/*============================
+        TEMPLATE-1
+=============================*/
+
+.ictab-template1 .ictab-content-wrap-section{
+    max-width: 665px;
+    position: relative;
+    text-align: left;
+}
+
+.ictab-template1 .ictab-content-wrap-section .ictab-header-text-wrap h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 42px;
+    font-size: 2.625rem;
+    font-weight: 400;
+}
+
+.ictab-template1 .ictab-content-wrap-section .ictab-description-content-wrap {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.ictab-template1 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    border: 2px solid #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.ictab-template1 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover,
+.ictab-template1 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:focus,
+.ictab-template1 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:active{
+    background: #fff;
+    color: #404040;
+}
+
+
+/*============================
+        TEMPLATE-2
+=============================*/
+
+.ictab-template2 .ictab-content-wrap-section{
+    max-width: 570px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.ictab-template2 .ictab-content-wrap-section .ictab-header-text-wrap h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+    color: #dfdfdf;
+    line-height: 1;
+}
+
+.ictab-template2 .ictab-content-wrap-section .ictab-description-content-wrap {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 25px;
+}
+
+.ictab-template2 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 600;
+    font-size: 1rem;  
+    -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+
+
+/*============================
+        TEMPLATE-3
+=============================*/
+
+.ictab-template3 .ictab-inner-wrapper{
+    min-height: 450px;
+    padding: 0;
+}
+
+.ictab-template3 .ictab-inner-wrapper .ictab-content-wrap-section{
+    max-width: 475px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 15%;
+    text-align: left;
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+}
+.ictab-template3 .ictab-content-wrap-section:before{
+    position: absolute;
+    left: -20%;
+    top: 0;
+    content: "";
+    background-color: rgba(56, 167, 113, 0.8);
+    width: 120%;
+    height: 100%;
+    -moz-transform: skew(-25deg, 0deg);
+    -webkit-transform: skew(-25deg, 0deg);
+    -o-transform: skew(-25deg, 0deg);
+    -ms-transform: skew(-25deg, 0deg);
+    transform: skew(-25deg, 0deg);
+
+    
+}
+
+.ictab-template3 .ictab-content-wrap-section .ictab-header-text-wrap h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #dfdfdf;
+    position: relative;
+}
+
+.ictab-template3 .ictab-content-wrap-section .ictab-description-content-wrap {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+}
+
+.ictab-template3 .ictab-content-wrap-section .ictab-header-text-wrap h3{
+    margin-bottom: 0;
+}
+
+.ictab-template3 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    -webkit-border-radius: 35px;
+            border-radius: 35px;
+}
+
+.ictab-template3 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover,
+.ictab-template3 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:focus,
+.ictab-template3 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:active{
+    background-color: #11bc84;
+}
+
+.ictab-template3 .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    margin-right: 0;
+}
+
+
+/*============================
+        TEMPLATE-4
+=============================*/
+
+
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section{    
+    max-width: 44%;
+    padding:80px 70px;
+    background: #fff;
+    text-align: left;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 0;
+}
+
+.ictab-template4 .ictab-content-wrap-section .ictab-header-text-wrap h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 34px;
+    font-size: 2.125rem;
+    font-weight: 400;
+    color: #41424e;
+    position: relative;
+    padding-left: 60px;
+}
+
+.ictab-template4 .ictab-content-wrap-section .ictab-header-text-wrap h3:before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #727888;
+    left: 0;
+    bottom: 0;
+}
+
+.ictab-template4 .ictab-content-wrap-section .ictab-description-content-wrap {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #404040;
+}
+
+.ictab-template4 .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    background-color: #a3a2be;
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;    
+    padding: 12px 22px;
+    -moz-box-shadow: 5px 5px 0 #cad8e5;
+    -webkit-box-shadow: 5px 5px 0 #cad8e5;
+    box-shadow: 5px 5px 0 #cad8e5;
+}
+
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover,
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:focus,
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section .ictab-ctabbutton-wrap .ictab-btn-wrap a:active{
+    -moz-box-shadow: 0 0 0 #cad8e5;
+    -webkit-box-shadow: 0 0 0 #cad8e5;
+    box-shadow: 0 0 0 #cad8e5;
+    background: #3d38be;
+}
+
+/*============================
+        TEMPLATE-6
+=============================*/
+
+.ictab-template6 .ictab-inner-wrapper{
+    background-color: #f13f30;
+}
+
+.ictab-template6 .ictab-inner-wrapper .ictab-double-content-wrapper{
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.ictab-template6 .ictab-inner-wrapper .ictab-left-content-wrap {
+    text-align: left;
+    width: 79%;
+    height: 100%;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    
+}
+
+
+.ictab-template6 .ictab-inner-wrapper .ictab-right-content-wrap{
+    width: 21%;
+    height: 100%;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.ictab-template6 .ictab-content-wrap-section .ictab-left-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.ictab-template6 .ictab-content-wrap-section .ictab-left-content-wrap .ictab-description-content-wrap {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.ictab-template6 .ictab-description-content-wrap{
+    margin-bottom: 0;
+}
+
+.ictab-template6 .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    border: 2px solid #fff;
+    color: #fff;  
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+.ictab-template6 .ictab-content-wrap-section .ictab-btn-wrap{
+    float: right;
+    margin-right: 0;
+}
+
+.ictab-template6 .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover,
+.ictab-template6 .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover,
+.ictab-template6 .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap a:hover{
+    color: #404040;
+    background: #fff;
+}
+
+.ictab-template6 .hvr-bounce-to-right:before{
+    background: #fff;
+}
+/*============================
+        TEMPLATE-22
+=============================*/
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-content-wrap-section{
+     display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: right;
+}
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap{
+    padding-right: 30px;
+}
+
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-right-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-description-content-wrap {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-align: right;
+}
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap{
+    text-align: right;
+}
+
+.ictab-template22 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap a{
+    background-color: #5bcf9b;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.ictab-template22 .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    margin-right: 0;
+    margin-left: 15px;
+    float: right;
+}
+
+.ictab-template22 .ictab-right-content-wrap{
+    padding-left: 30px;
+}
+
+/*============================
+        TEMPLATE-24
+=============================*/
+
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section{
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap  .ictab-image-wrap{
+    position: relative;
+    height: 100%;
+}
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap img{
+    backface-visibility: hidden;
+    object-fit: contain;
+    height: 100%;
+    min-width: 100%;
+    max-width: inherit;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap{
+    text-align: left;
+}
+
+.ictab-template24 .ictab-inner-wrapper .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    float: left;
+}
+
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-right-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    font-size: 3rem;
+    position: relative; 
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.ictab-template24 .ictab-right-content-wrap{
+    padding-left: 30px;
+}
+
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-description-content-wrap {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    border: 2px solid #fff;
+    overflow: hidden;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+}
+
+.ictab-template24 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap a:hover{
+    color: #404040;
+    background: #fff;
+}
+
+/*============================
+        TEMPLATE-28
+=============================*/
+
+.ictab-template28 .ictab-inner-wrapper .ictab-double-content-wrapper .ictab-content-wrap-section{
+    margin: 0;
+    padding: 0;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.ictab-template28  .ictab-common-overlay{
+    background: rgba(210, 188, 182, 0.8);
+}
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap{
+    padding-right: 60px;
+}
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap{
+    text-align: left;
+}
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap  .ictab-image-wrap{
+    position: relative;
+    height: 100%;
+}
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap img{
+    backface-visibility: hidden;
+    object-fit: contain;
+    height: 100%;
+    min-width: 100%;
+    max-width: inherit;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-right-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    color: #10242b;
+    line-height: 1.3;
+}
+
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-description-content-wrap {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #161616;
+}
+
+.ictab-template28 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+/*============================
+        TEMPLATE-36
+=============================*/
+
+.ictab-template36 .ictab-inner-wrapper{
+    padding: 0;
+}
+.ictab-template36 .ictab-inner-wrapper .ictab-double-content-wrapper{
+    max-width: 100%;
+    padding: 0;
+}
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section{
+    margin: 0;
+    padding: 0;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap{
+    text-align: left;
+    background: #eeeeee;
+    position: relative;
+    padding: 80px;
+}
+
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-left-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    font-size: 5rem;
+    font-weight: 700;  
+    color: #1e1e1e;
+}
+
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap .ictab-description-content-wrap {
+    font-family: 'Merriweather', serif;
+    font-size: 34px;
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap .ictab-ctabbutton-wrap a{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1e1e1e;
+    padding: 0;
+}
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap  .ictab-image-wrap{
+    position: relative;
+    height: 100%;
+}
+
+.ictab-template36 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap img{
+    backface-visibility: hidden;
+    object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+    max-width: inherit;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+
+/*============================
+        TEMPLATE-37
+=============================*/
+
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-content-wrap-section{
+    margin: 0;
+    padding: 0;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-left-content-wrap{
+    position: relative;
+}
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap{
+    text-align: left;
+    padding-left: 60px;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-right-content-wrap .ictab-header-text-wrap h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700; 
+}
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-right-content-wrap .ictab-header-text-wrap h3:after{
+    width: 50px;
+    height: 5px;
+    background-color: #00d9b7;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -7px;
+}
+
+.ictab-template37 .ictab-double-content-wrapper .ictab-content-wrap-section .ictab-right-content-wrap .ictab-description-content-wrap {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/*============================
+    Global Default CUSTOM CTA CONTENT CONTAINER 
+=============================*/
+
+
+.ictab-custom-template-wrap .ictab-inner-wrapper .ictab-common-overlay{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Frontend Button Custom Button design left */
+
+.ictab-inner-content .ictab-celement-sample a.ictab-custom-btn{
+    display: inline-block;
+    color: #ffffff;
+    background: #613bbe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    word-wrap: break-word;
+    display: table;
+}
+
+.ictab-inner-content .ictab-celement-sample a.ictab-custom-btn span.ictab-icon-type{    
+    display: table-cell;
+    float: none;
+    vertical-align: middle;    
+    padding-right: 7px;
+}
+
+.ictab-inner-content a.ictab-enable-icon-divider span.ictab-btn-title{
+    padding-left: 7px;
+}
+
+.ictab-inner-content .ictab-celement-sample a.ictab-custom-btn span.ictab-btn-title{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+.ictab-inner-content a.ictab-enable-icon-divider .ictab-icon-separator{
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    display: table-cell; 
+}
+
+
+/* Frontend Button Custom Button design right */
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-right span.ictab-btn-title{    
+    display: table-cell;
+    float: none;
+    vertical-align: middle;    
+    padding-right: 7px;
+}
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-right a.ictab-custom-btn span.ictab-icon-type{
+    padding-right: 0;
+}
+
+.ictab-inner-content .ictab-icon-position-right .ictab-enable-icon-divider span.ictab-icon-type{
+    padding-left: 7px;
+}
+
+/* Frontend Button Custom Button design Top */
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-top a.ictab-custom-btn{
+    display: block;
+}
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-top a.ictab-custom-btn span.ictab-icon-type{
+    display: block;
+}
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-top span.ictab-icon-type{    
+    display: block;
+    margin-bottom: 7px;
+    text-align: center;
+    padding: 0;
+}
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-top a.ictab-enable-icon-divider .ictab-icon-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.ictab-inner-content .ictab-celement-sample .ictab-icon-position-top a.ictab-enable-icon-divider span.ictab-btn-title{
+    padding: 0;
+}
+
+.ictab-custom-template-wrap .ictab-custom-elements-main-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+
+/*============================
+    Frontend Pop up layout change
+=============================*/
+div.light_square .pp_close{
+    margin-top: 15px;
+}
+
+.ictab-popup-content-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;    
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+
+.ictab-popup-content-wrapper .ictab_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+.ictab-popup-content-wrapper .ictab-shortcode-popup-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 20;
+}
+.ictab-popup-content-wrapper .ictab-col-full{
+    background: #fff;
+    border-bottom: 25px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: auto;
+    display: inline-block;
+    max-height: 80vh;
+    min-width: 30%;
+    max-width: 1280px;
+    overflow: auto;
+    padding: 30px 30px 20px 30px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    white-space: normal;
+    width: 35vw;
+    margin-top: 30px;
+}
+.ictab-popup-content-wrapper .ictab-sc-popup-close{
+    position: relative;
+    top: 63px;
+    z-index: 999;
+    right: -17%;
+    width: 40px;
+    background: #95a5a6;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;    
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ictab-popup-content-wrapper .ictab-sc-popup-close:hover{
+    background: #000;
+}
+
+.ictab-popup-content-wrapper .ictab-sc-popup-close:before,
+.ictab-popup-content-wrapper .ictab-sc-popup-close:after {
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    content: ' ';
+    height: 22px;
+    width: 2px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+    
+}
+.ictab-popup-content-wrapper .ictab-sc-popup-close:before {
+  transform: rotate(45deg);
+}
+.ictab-popup-content-wrapper .ictab-sc-popup-close:after {
+  transform: rotate(-45deg);
+}
+
+
+.ictab-popup-content-wrapper .ictab-sc-popup-close .fa{
+    display: none;
+}
+
+.ictab-popup-content-wrapper .ictab-col-full div.wpcf7-validation-errors,
+.ictab-popup-content-wrapper .ictab-col-full div.wpcf7-acceptance-missing{
+    color: #000;
+    font-size: 13px;
+    padding: 5px;
+    border: 2px solid #ff0000;
+}
+
+/*============================
+    Frontend Contact form Design up layout change
+=============================*/
+.ictab-cta-builder div.wpcf7,
+.ictab-form-field div.wpcf7{
+    position: relative;   
+    text-align: left;
+}
+.ictab-cta-builder div.wpcf7 label,
+.ictab-form-field div.wpcf7 label{
+     font-size: 14px;
+    color: #3e3e3e;
+}
+
+.ictab-cta-builder div.wpcf7  input[type="text"],
+.ictab-cta-builder div.wpcf7  input[type="email"],
+.ictab-cta-builder div.wpcf7  input[type="url"],
+.ictab-cta-builder div.wpcf7  input[type="number"],
+.ictab-cta-builder div.wpcf7  input[type="tel"],
+.ictab-cta-builder div.wpcf7  input[type="date"]{
+    width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    padding: 5px 15px;
+    border: 1px solid #3d1b40;
+    font-size: 14px;
+    height: 44px;
+    line-height: normal;
+    color: #000;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+}
+
+.ictab-form-field div.wpcf7  input[type="text"],
+.ictab-form-field div.wpcf7  input[type="email"],
+.ictab-form-field div.wpcf7  input[type="url"],
+.ictab-form-field div.wpcf7  input[type="number"],
+.ictab-form-field div.wpcf7  input[type="tel"],
+.ictab-form-field div.wpcf7  input[type="date"]{
+   width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    padding: 5px 15px;
+    border: 1px solid #3d1b40;
+    font-size: 14px;
+    height: 44px;
+    line-height: normal;
+    color: #000;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none
+}
+
+.ictab-cta-builder div.wpcf7 p,
+.ictab-form-field div.wpcf7 p{
+    margin: 0;
+    padding: 0;
+}
+
+.ictab-cta-builder div.wpcf7 span,
+.ictab-form-field div.wpcf7 span{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.ictab-cta-builder span.wpcf7-checkbox span,
+.ictab-form-field span.wpcf7-checkbox span{
+    width: auto !important;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    position: relative;
+    top: -1.5px;
+}
+
+.ictab-cta-builder span.wpcf7-radio span,
+.ictab-form-field span.wpcf7-radio span{
+    width: auto !important;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    position: relative;
+    top: -1.5px;
+}
+
+span.wpcf7-form-control-wrap span.wpcf7-checkbox,
+span.wpcf7-form-control-wrap span.wpcf7-radio{
+    margin-bottom: 0;
+}
+
+.ictab-cta-builder .wpcf7-form p:first-child, 
+.ictab-form-field .wpcf7-form p:first-child{
+    display: none;
+}
+
+
+.ictab-cta-builder select[multiple],
+.ictab-form-field select[multiple] {
+    min-height: 100px !important;
+    background: transparent !important;
+}
+
+.ictab-cta-builder span select.wpcf7-select,
+.ictab-form-field span select.wpcf7-select{
+    background-image: url(../images/select-arrow.png);
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+    border: 1px solid #3d1b40;
+    padding: 5px 15px;
+    -webkit-appearance: none;
+    background-color: #FFF;
+    background-position: right center;
+    background-repeat: no-repeat;    
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.ictab-cta-builder div.wpcf7 input[type=file].wpcf7-file,
+.ictab-form-field div.wpcf7  input[type=file].wpcf7-file{
+    font-size: 14px;
+}
+
+
+.ictab-cta-builder span.wpcf7-not-valid-tip,
+.ictab-form-field span.wpcf7-not-valid-tip{
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.ictab-cta-builder div.wpcf7 textarea,
+.ictab-form-field div.wpcf7 textarea{
+    width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    padding: 15px;
+    border: 1px solid #3d1b40;
+    font-size: 14px;
+    min-height: 200px;
+    line-height: normal;
+    color: #000;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+}
+
+.ictab-cta-builder div.wpcf7 input[type="submit"],
+.ictab-form-field  div.wpcf7 input[type="submit"]{    
+    min-width: 120px;
+    background: #2d3e52;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    text-align: center;
+    padding: 12px 35px;
+    box-shadow: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.ictab-cta-builder div.wpcf7 input[type="submit"]:hover,
+.ictab-form-field  div.wpcf7 input[type="submit"]:hover{
+    background: #3c5470;
+    color: #fff;
+    border: 1px solid #2d3e52;
+}
+
+.ictab-cta-builder div.wpcf7 .ajax-loader,
+.ictab-form-field div.wpcf7 .ajax-loader{
+    width: 16px !important;
+    margin-left: 15px !important;
+}
+
+.ictab-form-field div.wpcf7-response-output{
+    margin: 10px 0!important;
+}
+
+
+
+/*----------- Media query for Phone  --------------------*/
+
+
+@media only screen and (max-width: 768px) {
+.ictab-hide-btn-onmobile{
+     display: none !important;
+}
+
+.ictab-hide-btn-ondesktop{
+    display: block !important;
+}
+
+}
+
+
+/*----------- Media query for Ipad Landscape  --------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.ictab-hide-btn-onmobile{
+    display: none !important;
+}
+
+.ictab-hide-btn-ondesktop{
+    display: block !important;
+}
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section{
+    max-width: 50%;
+}
+
+}
+
+/*----------- Media query for Ipad portrait  --------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.ictab-hide-btn-onmobile{
+     display: none !important;
+}
+
+.ictab-hide-btn-ondesktop{
+    display: block !important;
+}
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    width: auto !important;
+}
+.ictab-template3 .ictab-content-wrap-section:before{
+    width: 200% !important;
+}
+
+.ictab-template6 .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    float: left;
+}
+}
+
+/*----------- Media query for Ipad pro Portrait  --------------------*/
+
+@media only screen and (min-device-width: 1024px) 
+and (max-device-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 2)  
+and (orientation: portrait)  {
+
+.ictab-hide-btn-onmobile{
+     display: none !important;
+}
+
+.ictab-hide-btn-ondesktop{
+    display: block !important;
+}
+
+}
+
+
+
+/*----------- Media query for Ipad pro Landscape  --------------------*/
+
+@media only screen 
+and (min-device-width: 1366px) 
+and (max-device-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2)  
+and (orientation: landscape)  {
+     
+.ictab-hide-btn-onmobile{
+    display: none !important;
+}
+
+}
+
+
+
+/*----------- Media query for premium template --------------------*/
+
+@media only screen and (max-width: 768px) {
+.ictab-custom-template-wrap .ictab-inner-wrapper{
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.ictab-popup-content-wrapper .ictab-col-full{
+    min-width: 100%;
+}
+
+.ictab-popup-content-wrapper .ictab-sc-popup-close{
+    top: 5px;
+    right: 0;
+}
+
+.ictab-custom-template-wrap .ictab-element-title-wrap{
+    text-align: center !important;
+}
+
+.ictab-available-template-wrap .ictab-inner-wrapper .ictab-double-content-wrapper{
+    display: block;
+}
+
+.ictab-available-template-wrap .ictab-inner-wrapper{
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.ictab-left-content-wrap{
+    width: 100%;
+}
+
+.ictab-right-content-wrap{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ictab-available-template-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.ictab-template3 .ictab-content-wrap-section:before{
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+}
+    
+.ictab-template3 .ictab-inner-wrapper .ictab-content-wrap-section{
+    margin-left: 0;     
+}
+.ictab-template3 .ictab-content-wrap-section:before{
+    width: 130%;    
+}
+.ictab-template4 .ictab-inner-wrapper .ictab-content-wrap-section{
+    max-width: 100%;
+}
+.ictab-template6 .ictab-content-wrap-section .ictab-right-content-wrap .ictab-ctabbutton-wrap .ictab-btn-wrap a{
+    margin-top: 0;
+}   
+
+.ictab-template6 .ictab-inner-wrapper .ictab-double-content-wrapper{
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.ictab-template6 .ictab-inner-wrapper .ictab-left-content-wrap,
+.ictab-template6 .ictab-inner-wrapper .ictab-right-content-wrap{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    html {
+        font-size: 12px;
+    }
+}

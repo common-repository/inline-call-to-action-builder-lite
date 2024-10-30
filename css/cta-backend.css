@@ -1,0 +1,2314 @@
+/*
+    Backend StyleSheet
+    Author : Access Keys
+*/
+
+*:focus {
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+.ictab-clearfix:before,
+.ictab-clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+    flex-basis: 0;
+    order: 1;
+}
+.ictab-display-settings span.ictab-spinner-loader-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-image: url(../images/ajax-preview-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    z-index: 999999 !important;
+}
+.ictab-field-options-wrap {
+    margin: 15px 0px 14px 3px;
+    min-height: 50px;
+    line-height: 1.2;
+}
+.ictab-field-options-wrap .ictab-label-field {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.ictab-field-options-wrap .ictab-input-field {
+    width: 68%;
+    display: inline-block;
+}
+
+.ictab-input-field select,
+.ictab-input-field input[type=text],
+.ictab-input-field input[type=url],
+.ictab-input-field input[type=number],
+.ictab-input-field select,
+.ictab-input-field textarea{
+    padding: 7px 10px 7px 10px;
+    line-height: 28px;
+    min-width: 230px;
+}
+.ictab-input-field .ictab-small-width {
+    width: 77px;
+    min-width: 71px !important;
+}
+.ictab-fullwidth-wrap.ictab-templates-preview-wrap {
+    margin-top: 20px;
+}
+.template-preview {
+    border: 1px solid #ccc;
+    resize: both;
+    width: 807px;
+}
+
+.ictab-custom-template-wrapper .ictab-ui-custom-cta-builder-wrap .ictab-common-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------------------------------------------------
+ ICTTAB css
+------------------------------------------------------------------------------*/
+.ictab-tab-header ul.ictab-nav-tabs{
+       position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-bottom: 30px;
+}
+
+.ictab-tab-header ul li{
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 0;
+    background-color: #1d1b33;
+    color: #fff;
+    width: 100%;
+    border-top: 1px solid #0e0d1b;
+    border-right: 1px solid #0e0d1b;
+    border-bottom: 1px solid #0e0d1b;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ictab-tab-header ul li.ictab-active:before{
+    position: absolute;
+    content: "";
+    left: -1px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #0e0d1b;
+}
+
+.ictab-tab-header ul li:nth-child(1){
+    border-left: 3px solid #0e0d1b;
+}
+
+.ictab-tab-header ul li:nth-child(4){
+    border-right: 3px solid #0e0d1b;
+}
+
+
+.ictab-tab-header ul li.ictab-active{
+    background: transparent;
+    color: #000;
+    border-bottom: none;
+    border-bottom: 1px solid transparent;
+    font-weight: 600;
+}
+
+.ictab-tab-header ul li:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #1d1b33;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: translate3d(0, -150%, 0);
+    transform: translate3d(0, -150%, 0);
+}
+
+.ictab-tab-header ul li.ictab-active:after{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.ictab-wrapper .ictab-custom-open ul li:nth-child(3){
+    border-left: 3px solid #0e0d1b;
+}
+
+ul.ictab-nav-tabs {
+    margin: 0;
+}
+
+.ictab-tab-header ul li .fa{
+    margin-right: 8px;
+}
+.ictab-ui-custom-cta-builder-wrap .ictab-ui-draggable.ui-draggable-handle.ui-droppable {
+    background: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    position: relative;
+    width: calc(100% - 3px) !important;
+}
+.ictab-custom-template-wrapper{
+    overflow: hidden;
+}
+.ictab-custom-each-element.ui-draggable.ui-draggable-handle.ui-draggable-dragging{
+    z-index: 9999999;
+}
+
+.ictab-custom-each-element.ui-draggable.ui-draggable-handle.ui-draggable-dragging .ictab-element-title{
+color: red;
+z-index: 9999999;
+}
+
+/* Custom Elements */
+.ictab-custom-each-element .ictab-element-title {
+    height: 38px;
+    min-width: 135px;
+    line-height: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-bottom: 1px solid #eaeaea;
+    color: #000;
+    position: relative;
+    padding-left: 45px;
+    cursor: move;
+    margin-bottom: 10px;
+}
+
+.ictab-custom-builder-field .ictab-element-title#ictab-element-normal_text{
+    background-image: url(../images/custom-icons/text.png);
+    background-color: #2d3e52;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+}
+.ictab-custom-builder-field .ictab-element-title#ictab-element-wpeditor{
+    background-image: url(../images/custom-icons/editor.png);
+    background-color: #2d3e52;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+}
+.ictab-custom-builder-field .ictab-element-title#ictab-element-image{
+    background-image: url(../images/custom-icons/image.png);
+    background-color: #2d3e52;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+}
+.ictab-custom-builder-field .ictab-element-title#ictab-element-button{
+    background-image: url(../images/custom-icons/submit.png);
+    background-color: #2d3e52;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+}
+.ictab-custom-builder-field .ictab-element-title#ictab-element-video{
+    background-image: url(../images/custom-icons/video.png);
+}
+.ictab-custom-builder-field .ictab-element-title{
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+}
+.ictab-element-title-wrap h4{
+    margin: 0px;
+    cursor: pointer;
+}
+
+/* CUstom element end */
+.ictab-inner-elements{
+    cursor: pointer;
+    border: 1px solid transparent;
+    z-index: 999;
+}
+.ictab-inner-elements:hover{
+   border: 1px dotted #e2e2e2;
+}
+.ictab-actions{
+    display: none;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    left: 0;
+}
+.ictab-element-title-wrap {
+    padding: 13px;
+}
+
+.ictab-ui-custom-cta-builder-wrap .ictab-celement-sample .ictab-image-preview{
+    max-width: 200px;
+}
+
+.ictab-ui-custom-cta-builder-wrap .ictab-celement-sample .ictab-image-preview img{
+    max-width: 100%;
+    height: auto;
+}
+.ictab-inner-elements:hover > .ictab-actions{
+    display: inline-block;
+    text-align: left;
+    z-index: 999;
+    max-width: 65px;
+    border-radius: 5px;
+    line-height: 0;
+    padding: 8px;
+}
+
+.ictab-inner-elements .ictab-desc{
+   color: #777;
+}
+.wpb-hover-element .wpb-option-field {
+    display: block !important;
+}
+.ictab-celement-sample{
+    text-align: left;
+}
+/* Iframe Popup */
+.ictab_menu_settings_frame{
+  display: none;
+}
+.ictab_main_wrapper{
+    background: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    max-height: 45vh;
+}
+
+.ictab_frame_header {
+    background: #2d3e52;
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    padding-right: 15px;
+    z-index: 999;
+}
+.ictab_frame_header span.ictab-main-settings-title{
+    background: #0073aa;
+    width: 245px;
+    height: 43px;
+    line-height: 43px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.ictab_frame_header span.ictab-main-settings-title:before{
+    position: absolute;
+    font-family: "FontAwesome";
+    content: '\f085';
+    top: 2px;
+    left: 9px;
+}
+span.ictab-close-btn i {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+span.ictab-close-btn {
+    float: right;
+    margin-top: 12px;
+    margin-right: 25px;
+}
+
+
+#ictab-ntext-settings{
+    display: block;
+}
+
+
+.ictab-custom-item-panel-info{
+    width: 260px;
+    position: fixed;
+    z-index: 50;
+    color: #716b6b;
+    left: 0;
+    background-color: #2d3e52;
+    height: 100%;
+    padding-top: 43px;
+}
+.ictab-custom-item-panel-info ul {
+     list-style: none;
+     clear: both;
+     margin-top: 0px;
+}
+.ictab-custom-item-panel-info ul li.ictab-builder-tab{
+    background: #2d3e52;
+    border-bottom: 1px solid #1f2e3e;
+    text-align: right;
+    padding: 12px 30px 11px 12px;
+}
+
+.ictab-custom-item-panel-info ul li.ictab-builder-tab.ictab-active-set{
+      background: #3c5470;
+      cursor: pointer;
+      color: #fff;
+}
+
+.ictab-custom-item-panel-info ul li.ictab-builder-tab.ictab-active-set a.ictab-stab{
+    color: #fff;
+}
+.ictab-custom-item-panel-info ul li.ictab-builder-tab.ictab-active-set a.ictab-active:focus,
+.ictab-custom-item-panel-info ul li.ictab-builder-tab.ictab-active-set a.ictab-active:active{
+    -moz-outline-style: none;
+    outline:none;
+    outline: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+.ictab-custom-item-panel-info ul li{
+    margin-bottom: 0;
+}
+
+.ictab-custom-item-panel-info ul li.ictab-active-set{
+    position: relative;
+}
+.ictab-custom-item-panel-info ul li.ictab-active-set:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #00caff;
+}
+.ictab-custom-item-panel-info ul li a.ictab-stab {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 13px;
+    position: relative;
+}
+.ictab-custom-item-panel-info ul li a.ictab-stab .fa{
+    margin-right: 10px;
+}
+.ictab-tab-content-wrap-container{
+    background: #fff;
+    width: calc(100% - 260px);
+    height: 38vh;
+    float: right;
+    padding-top: 43px;
+    overflow: hidden;
+    left: 260px;
+    padding-bottom: 20px;
+}
+.ictab-tab-content-wrap-container .mCSB_scrollTools{
+    top: 15px;
+}
+.ictab-tab-content-wrap {
+    padding: 2px 0 30px 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+.ictab-tab-content-wrap-container .ictab-tab-content-wrap h3{
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+    width: 94%;
+    font-size: 19px;
+    margin-top: 10px;
+    padding-left: 25px;
+    color: #2d3e52;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.ictab-tab-content-wrap-container .ictab-tab-content-wrap h3:before{
+    position: absolute;
+    content: "\f05a";
+    left: 0;
+    top: 3px;
+    font-family: "FontAwesome";
+    color: #00caff;
+}
+
+
+.ictab-tab-content-wrap-container .ictab-tab-content-wrap p.ictab-setting-description{
+    font-size: 13px;
+    font-style: italic;
+    margin: 2px 0 5px;
+    color: #666;
+}
+.ictab-setting-input-wrap input[type=text],
+.ictab-setting-input-wrap input[type=search],
+.ictab-setting-input-wrap input[type=tel],
+.ictab-setting-input-wrap input[type=url],
+.ictab-setting-input-wrap input[type=password],
+.ictab-setting-input-wrap input[type=email],
+.ictab-setting-input-wrap input[type=number],
+.ictab-setting-input-wrap select,
+.ictab-setting-input-wrap textarea{
+    box-shadow: none;
+    height: 35px;
+    padding: 7px 10px 7px 10px;
+    min-width: 230px;
+}
+.ictab-setting-input-wrap select.ictab-select-field{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url(../images/select-arrow.png);
+    background-position: right 1px;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 35px;
+}
+
+.ictab-element-setting-wrap .ictab-setting-input-wrap textarea{
+    height: auto;
+}
+
+.ictab-builder-tab-content{
+    display: none;
+}
+.ictab-builder-tab-content .ictab-element-setting-wrap label{
+    font-weight: 600;
+}
+.ictab-builder-tab-content.ictab-active-set-content{
+    display: block;
+}
+/*iframe settings row */
+/* Iframe Popup end*/
+.ictab-element-setting-wrap {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+}
+.ictab-builder-tab-content .ictab-element-setting-wrap{
+   margin-bottom: 20px;
+}
+.ictab-builder-tab-content label.ictab-setting-label {
+
+}
+label.ictab-setting-label {
+    float: left;
+    width: 200px;
+    display: inline-block;
+}
+.ictab-setting-input-wrap {
+    float: left;
+    max-width: 840px;
+    margin-bottom: 5px;
+}
+p.ictab-setting-description {
+    color: #aaa;
+    max-width: 499px;
+    clear: both;
+    margin: 0;
+}
+input.ictab-done-btn {
+    margin: -5px 12px 0px 0px !important;
+    padding: 0px !important;
+    width: 95px;
+}
+.ictab-measurement-wrapper {
+    box-sizing: border-box;
+    float: left;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.ictab-measurement-wrapper input{
+    min-width: auto !important;
+}
+
+.ictab-measurement-inputs em{
+    position: relative;
+    top: 10px;
+    left: 4px
+}
+
+
+/*
+* Icons Set display
+*/
+.ictab-builder-tab-content .ictab-show-icon-sets{
+    width: 49%;
+    position: relative;
+    top: -18px;
+    display: none;
+    left: 200px;
+}
+.ictab-builder-tab-content .ictab-show-icon-sets .ictab-show-icon{
+    display: block;
+}
+.ictab-builder-tab-content .ictab-builder-tab-content .ictab-show-icon-sets{
+    position: absolute;
+    z-index: 333;
+    right: 7%;
+    top: 167px;
+}
+.ictab-builder-tab-content .ictab-icon-sections{
+    overflow: hidden;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets select.ictab-select-field{
+    box-shadow: none;
+    padding-left: 20px;
+    position: relative;
+    z-index: 444;
+}
+
+.ictab-icon {
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+.ictab-icon i {
+    display: block;
+    text-decoration: none;
+    color: #373737;
+    padding: 6px 12px;
+    border: 1px solid #bbb5b5;
+    font-size: 22px;
+    width: 15px;
+    text-align: center;
+    text-indent: -2px;
+}
+.ictab-label-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ictab-builder-tab-content .ictab-icon-sections {
+    height: 236px;
+    width: 95%;
+    padding: 4px;
+    border: 1px solid #d0cfd2;
+    background: #ffffff;
+}
+
+.ictab-builder-tab-content  .mCSB_inside > .mCSB_container {
+    margin-right: 5px;
+}
+
+
+/* Checkbox Design Start*/
+.ictab-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    top: auto;
+}
+.ictab-slider.round {
+    border-radius: 34px;
+}
+.ictab-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.ictab-switch input[type=checkbox] {
+    display: none;
+}
+.ictab-slider.round:before {
+    border-radius: 50%;
+}
+.ictab-slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .ictab-slider {
+    background-color: rgba(171,8,8,0.8);
+}
+input:checked + .ictab-slider:before {
+    font-family: "FontAwesome";
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+    content: "\f00c";
+    font-size: 11px;
+    color: rgba(171,8,8,0.6);
+    text-align: center;
+    line-height: 17px;
+}
+
+/*------------------------------------------------------------------------------
+CTA ictab-vtab-wrapper left panel CSS
+------------------------------------------------------------------------------*/
+
+.ictab-vertical-tab-wrapper{
+    display: table;
+}
+
+.ictab-item-inner-body .ictab-vtab-wrapper{
+    min-width: 198px;
+    vertical-align: top;
+    display: table-cell;
+    float: none;
+    background-color: #2d3e52;
+    white-space: nowrap;
+}
+.ictab-item-inner-body .ictab-vtab-wrapper li{
+    padding: 0 20px;
+    border-bottom: 1px solid #1f2e3e;
+    margin-bottom: 0;
+    cursor: pointer;
+    height: 43px;
+    line-height: 41px;
+    color: #FFF;
+    position: relative;
+}
+
+
+
+.ictab-item-inner-body .ictab-vtab-wrapper li .fa{
+    margin-right: 8px;
+}
+.ictab-item-inner-body .ictab-vtab-wrapper li.ictab-vactive{
+    background-color: #3c5470;
+    color: #fff;
+}
+
+.ictab-item-inner-body .ictab-vtab-wrapper li.ictab-vactive:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #00caff;
+}
+
+/*------------------------------------------------------------------------------
+CTA ictab-item-inner-body Right panel CSS
+------------------------------------------------------------------------------*/
+
+.ictab-vtab-content-wrapper .ictab-input-field select,
+.ictab-input-field input[type=text],
+.ictab-input-field input[type=url],
+.ictab-input-field input[type=number],
+.ictab-input-field select,
+.ictab-input-field textarea{
+    box-shadow: none;
+    height: 35px;
+    padding: 7px 10px 7px 10px;
+    line-height: 18px;
+}
+
+.ictab-vtab-content-wrapper .ictab-input-field textarea{
+    height: auto;
+}
+
+.ictab-vtab-content-wrapper .ictab-input-field label{
+    margin-right: 15px;
+}
+
+.ictab-item-inner-body .ictab-vtab-content-wrapper{
+    width: 78%;
+    display: table-cell;
+    float: none;
+    padding-left: 25px;
+    vertical-align: top;
+}
+.ictab-item-inner-body .ictab-vtab-content-wrapper p.description{
+    width: 95%;
+}
+.ictab-item-inner-body #wp-ictab-cta-description-wrap{
+    width: 98.6%;
+}
+.ictab-item-inner-body .ictab-style-custom-wrapper .ictab-style-label{
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+    display: block;
+    color: #2d3e52;
+    font-weight: 600;
+    width: calc(100% - 35px);
+    margin-bottom: 30px;
+}
+
+.ictab-item-inner-body .ictab-style-custom-wrapper .ictab-style-label:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.05);
+    bottom: -0.6rem;
+    left: 0;
+    right: 0;
+}
+
+.ictab-item-inner-body .ictab-style-custom-wrapper .ictab-style-label:after{
+    position: absolute;
+    content: "";
+    width: 3.5rem;
+    height: 3px;
+    background: #2d3e52;
+    bottom: -0.65rem;
+    left: 0;
+    right: 0;
+}
+
+
+#ictab-half-background-color .ictab-label-field{
+    width: 30%;
+}
+#ictab-half-background-color .ictab-input-field{
+    width: 68%;
+}
+.ictab-option-wrapper .ictab-item-header-wrap{
+    background-color: #d7dde8;
+    padding: 10px 12px 10px 10px;
+    width: 97%;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+#ictab-cta-settings .ictab-option-wrapper{
+    margin-bottom: 20px;
+}
+
+.ictab-option-wrapper .ictab-item-header-wrap span.ictab-item-title{
+    width: 98%;
+    display: inline-block;
+}
+.ictab-item-inner-body .ictab-input-field .ictab-button{
+    cursor: pointer;
+}
+
+.ictab-item-inner-body .ictab-field-options-wrap .fa-shopping-cart:before {
+    content: "\f07a";
+    border: 1px solid #cccccc;
+    padding: 2px 5px;
+    background: #f7f7f7;
+    border-radius: 2px;
+}
+.ictab-item-inner-body .ictab-field-options-wrap .icon-picker{
+    font-size: 16px;
+}
+#ictab-background-settings p.description{
+    margin-bottom: 25px;
+}
+
+
+#ictab-background-settings .ictab-input-field label{
+    margin-right: 15px;
+}
+
+
+#ictab-custom-settings .ictab-input-field .ictab-small-width{
+    width: 15% !important;
+}
+
+
+#ictab-custom-settings .ictab-input-field label{
+    margin-right: 15px;
+}
+
+#ictab-custom-settings .ictab-option-wrapper{
+    margin-top: 15px;
+}
+
+.ictab-builder-tab-content .ictab-icon-picker-preview span{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.ictab-item-inner-body .ictab-field-options-wrap div.icon-picker,
+.ictab-builder-tab-content .ictab-icon-picker-preview span{
+    background: #d7dde8;
+    border: 0;
+    width: 100px;
+    height: auto;
+    box-shadow: none;
+    vertical-align: top;
+    font-size: 14px;
+    position: relative;
+    color: #000;
+    padding: 6px 15px;
+    border-radius: 5px;
+    line-height: normal;
+    text-align: center;
+    -webkit-box-sizing: initial;
+       -moz-box-sizing: initial;
+            box-sizing: initial;
+}
+.ictab-item-inner-body .ictab-field-options-wrap div.icon-picker:before{
+    position: absolute;
+    right: -40px;
+    border: 1px solid transparent;
+    top: 0;
+    background: none;
+    text-decoration: none;
+    color: #373737;
+    padding: 4px 12px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+}
+
+.ictab-item-inner-body .ictab-field-options-wrap  div.button.icon-picker{
+    line-height: normal !important;
+}
+
+input.ictab-default-button{
+    min-height: 35px;
+    min-width: 120px;
+    background: #2d3e52;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 0;
+    padding: 4px 11px;
+    box-shadow: none;
+    text-shadow: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input.ictab-default-button:hover{
+    background: #3c5470;
+    color: #fff;
+    border: 1px solid #2d3e52;
+}
+
+input.ictab-custom-slide-add-trigger{
+    margin-top: 5px;
+}
+
+.ictab-field-options-wrap .ictab-select-content-button{
+    min-height: 34px !important;
+    min-width: 120px;
+    background: #2d3e52;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 24px !important;
+    padding: 4px 11px !important;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    top: 1px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.ictab-field-options-wrap .ictab-select-content-button:hover{
+    background: #3c5470;
+    color: #fff;
+    border: 1px solid #2d3e52;
+}
+
+.ictab-setting-input-wrap a.ictab-select-content-button{
+     display: inline-block;
+     text-decoration: none;
+}
+
+.ictab-field-options-wrap .wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus{
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+
+.ictab-field-options-wrap  .ictab-existing-content-selector{
+    margin-top: 15px;
+}
+.ictab-field-options-wrap  .ictab-existing-content-selector .ictab-field-wrap label{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.ictab-existing-content-selector  p.description{
+    margin-top: 15px;
+}
+
+
+.ictab-existing-content-selector .ictab-field ul li a{
+    position: relative;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #2d3e52;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.ictab-existing-content-selector .ictab-field ul li a:before{
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content:"\f18e";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ictab-existing-content-selector .ictab-field ul li a:hover{
+    text-decoration: underline;
+}
+
+#ictab-background-slider .ictab-each-slide a{
+    color: #2d3e52;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+#ictab-custom-settings .ictab-field-options-wrap h4{
+    display: inline-block;
+    width: 30.5%;
+    float: left;
+    vertical-align: top;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.ictab-display-settings .ictab-field-options-wrap{
+    min-height: 26px;
+}
+.ictab-display-settings .ictab-input-field label{
+    margin-right: 15px;
+}
+img.template-preview{
+    max-width: 100%;
+}
+#ictab_btn_preview{
+    font-size: 15px;
+    font-family: "ABeeZee";
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 8px;
+}
+.ictab-iconpreview img{
+    max-width: 100%;
+    width: 32px;
+    height: auto;
+    margin-top: 5px;
+}
+.ictab-animation-effect h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.ictab-animation-effect .ictab-button-wrap{
+    display: inline-block;
+    border: 1px solid #ebeced;
+    padding: 25px;
+    line-height: normal;
+}
+
+.ictab-animation-effect .ictab-button-wrap a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    outline: 0;
+    padding: 10px 20px;
+    background-color: #2b82c9;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+}
+
+.ictab-button-wrap a.ictab-btn-hover-preview .fa{
+    margin-left: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
+.ictab-button-wrap a.ictab-btn-preview .fa{
+    margin-left: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
+select.ictab-select-field{
+    background-image: url(../images/select-arrow.png);
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+    height: 35px;
+    color: #444444;
+    cursor: pointer;
+    border: 1px solid #f8f8f8;
+    -webkit-appearance: none;
+    background-color: #FFF;
+    background-position: right center;
+    background-repeat: no-repeat;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    width: 230px;
+    border: solid 1px #ddd;
+}
+
+.ictab-vtab-content .ictab-style-label{
+    margin-top: 10px;
+}
+
+.ictab-display-settings .ictab-components-docs-wrap{
+    display: block;
+    width: calc(100% - 30px);
+    padding: 10px 8px;
+    background: #f7f6f6;
+    border-left: 5px solid #2d3e52;
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    -webkit-box-shadow: 0.5px 0.5px 1px 0px rgba(208,208,208,1);
+-moz-box-shadow: 0.5px 0.5px 1px 0px rgba(208,208,208,1);
+box-shadow: 0.5px 0.5px 1px 0px rgba(208,208,208,1);
+}
+
+.ictab-display-settings .ictab-components-docs-wrap p{
+    margin: 0;
+    padding: 0;
+}
+
+.ictab-display-settings .ictab-components-docs-wrap p a{
+    margin-left: 2px;
+    text-decoration: underline;
+    color: #2d3e52;
+}
+
+
+/*------------------------------------------------------------------------------
+CTA Information Page Layout
+------------------------------------------------------------------------------*/
+
+.ictab-header{
+    margin-right: 15px;
+}
+
+.ictab-header .ictab-header-section{
+    background-color: #2d3e52;
+    display: block;
+    margin-top: 20px;
+    padding: 15px 0;
+}
+.ictab-header .ictab-header-section img{
+    margin-left: 15px;
+    width: 189px;
+}
+.ictab-header h2{
+    font-size: 1.7em;
+    color: #2d3e52;
+}
+.ictab-import-export-wrapper .ictab-holder{
+    background-color: #fff;
+    padding: 15px 15px 5px 15px;
+    margin-right: 15px;
+}
+
+.ictab-import-wrapper{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.ictab-import-wrapper .ictab-field-label label{
+    font-weight: 600;
+    color: #2d3e52;
+    font-size: 14px;
+}
+
+.ictab-import-wrapper .ictab-field-label p{
+    font-weight: normal;
+}
+
+.ictab-import-export-wrapper #message{
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+#ictab-export-form .ictab-import-wrapper{
+    border-bottom: 0;
+}
+
+.ictab-import-export-wrapper
+.ictab-aboutus-wrapper{
+    background: #fff;
+    padding: 20px;
+}
+
+.ictab-import-export-wrapper select {
+    padding: 7px 10px 7px 10px;
+    line-height: 18px;
+    height: 35px;
+    box-shadow: none;
+    display: block;
+    margin: 8px 0 17px 0;
+    min-width: 250px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/select-arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ictab-custom-upload-wrapper{
+    margin-bottom: 17px;
+}
+.ictab-custom-upload-wrapper input#ictab_uploadFile{
+    min-width: 250px;
+    box-shadow: none;
+    border: 1px solid #dddddd;
+    min-height: 35px;
+}
+
+.ictab-custom-upload-wrapper .fileUpload{
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.ictab-container input#ictab_uploadimport_Btn{
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    top: 0;
+    display: inline-block;
+}
+
+.ictab-custom-upload-wrapper .fileUpload label{
+    padding: 8px 15px;
+    background-color: #bb3939;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.ictab-custom-upload-wrapper input[type=button],
+.ictab-custom-upload-wrapper input[type=submit],
+.ictab-custom-upload-wrapper input[type=reset]{
+    min-width: 250px;
+}
+.ictab-aboutus-wrapper{
+    background: #fff;
+    padding: 15px 15px 30px 15px;
+    margin-right: 4px;
+    float: left;
+    width: 70%;
+}
+.ictab-import-export-wrapper {
+    float: left;
+    width: 70%;
+}
+.upgrade{
+    float:right;
+}
+.ictab-aboutus-wrapper .ictab-htu-settings h5{
+    font-size: 13px;
+}
+.ictab-aboutus-wrapper .ictab-htu-settings p{
+    font-size: 14px;
+}
+.ictab-aboutus-wrapper .ictab-htu-settings h5 a{
+    color: #2d3e52;
+}
+
+.ictab-aboutus-wrapper .ictab-htu-settings h5 a:hover{
+    text-decoration: none;
+}
+
+.ictab-aboutus-wrapper .etab-content-section h5:first-child{
+    margin-top: 30px;
+}
+
+.ictab-aboutus-wrapper .etab-content-section h5{
+    font-size: 16px;
+    color: #2d3e52;
+    text-transform: uppercase;
+    position: relative;
+    margin: 40px 0 20px 0;
+}
+.ictab-aboutus-wrapper .etab-content-section h5:after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #2d3e52;
+    bottom: -10px;
+    left: 1px;
+}
+
+.ictab-aboutus-wrapper .second-info li strong{
+    display: block;
+    font-size: 15px;
+    margin: 30px 0 5px 0;
+}
+
+.ictab-aboutus-wrapper .second-info li{
+    line-height: 2;
+    position: relative;
+}
+
+.ictab-aboutus-wrapper .second-info li ul{
+    margin-top: 5px;
+}
+
+.ictab-aboutus-wrapper .second-info li ul li{
+    padding-left: 15px;
+    position: relative;
+}
+
+.ictab-aboutus-wrapper.second-info{
+    position: relative;
+}
+
+.ictab-aboutus-wrapper ul.tab-setting-list li{
+      padding-left: 15px;
+    position: relative;
+}
+
+.ictab-aboutus-wrapper ul.tab-setting-list li ul li{
+    margin-left: -15px;
+}
+
+.ictab-aboutus-wrapper ul.tab-setting-list li:before{
+     position: absolute;
+    left: 0;
+    top: 4px;
+    content:'\f054';
+    font-family: FontAwesome;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.second-info li ul li:before{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content:'\f054';
+    font-family: FontAwesome;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+ul.ictab-how-to-btm-list li{
+    padding-left: 0 !important;
+    position: relative;
+}
+
+ul.ictab-how-to-btm-list li:before{
+    display: none;
+}
+.ictab-aboutus-wrapper h3.ictab-sub-title{
+    font-size: 16px;
+    color: #2d3e52;
+    text-transform: uppercase;
+    position: relative;
+    margin: 40px 0 20px 0;
+}
+
+.ictab-aboutus-wrapper h3.ictab-sub-title:after{
+  position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #2d3e52;
+    bottom: -10px;
+    left: 1px;
+}
+
+.ictab-aboutus-wrapper h3.ictab-sub-title:first-child{
+    margin-top: 18px;
+    clear: both;
+}
+
+.ictab-aboutus-wrapper a{
+ color: #2d3e52;
+ outline: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.ictab-aboutus-wrapper a:hover{
+    text-decoration: none;
+}
+.ictab-more-abt-us{
+    margin-top: 30px;
+}
+
+.ictab-aboutus-wrapper .plgin-abt-desc{
+    margin-bottom: 30px;
+}
+.ictab-aboutus-wrapper .plgin-authr-abt-desc{
+    margin-bottom: 30px;
+}
+
+.ictab-aboutus-wrapper .ictab-more-abt-us h3{
+    margin-bottom: 50px;
+}
+
+.ictab-aboutus-wrapper .ictab-more-abt-us .ictab-col-one-third{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.ictab-aboutus-wrapper .ictab-more-abt-us .ictab-col-one-third .ictab-product{
+    margin-bottom: 45px;
+}
+
+.ictab-tab-wrapper .keepintouch-wrapper{
+    margin-bottom: 30px;
+}
+
+.ictab-tab-wrapper ul.ictab-about-footer{
+    position: relative;
+    display: block;
+    margin-top: -30px;
+    margin-bottom: 70px;
+}
+
+.ictab-tab-wrapper ul.ictab-about-footer li{
+    float:left;
+    margin-right: 10px;
+}
+
+
+/*------------------------------------------------------------------------------
+CTA Custom Template Page Layout
+------------------------------------------------------------------------------*/
+
+#ictab-ntext-settings{
+    position: relative;
+    min-height : 45vh;
+}
+
+.ictab-custom-builder-field #ictab-element-normal_text{
+    border-top: 1px solid #eaeaea;
+    border-left: 3px solid #fbad6b;
+    border-right: 3px solid #fbad6b;
+    background-color: #f6f8f8;
+}
+
+.ictab-custom-builder-field #ictab-element-wpeditor{
+    border-left: 3px solid #549494;
+    border-right: 3px solid #549494;
+    background-color: #f6f8f8;
+}
+
+.ictab-custom-builder-field #ictab-element-button{
+    border-left: 3px solid #bccd65;
+    border-right: 3px solid #bccd65;
+    background-color: #f6f8f8;
+}
+
+.ictab-custom-builder-field #ictab-element-image{
+    border-left: 3px solid #7676bc;
+    border-right: 3px solid #7676bc;
+    background-color: #f6f8f8;
+}
+
+.ictab-custom-template-wrapper p.description{
+    margin-bottom: 15px;
+}
+
+.ictab-custom-template-wrapper .ictab-actions{
+    background-color: #2d3e52;
+    padding: 5px 10px;
+}
+
+.ictab-custom-template-wrapper .ictab-actions:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #2d3e52;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+.ictab-custom-template-wrapper .ictab-actions a{
+    color: #fff;
+    margin-left: 7px;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.ictab-custom-panel-settings{
+    position: relative;
+}
+
+input.ictab-done-btn{
+    background: #00caff !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border: 1px solid #3c5470 !important;
+    border-radius: 0px !important;
+    text-shadow: none !important;
+    color: #fff !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input.ictab-done-btn:hover{
+    background: #3c5470 !important;
+    border: 1px solid #2d3e52 !important;
+    color: #fff !important;
+}
+
+.ictab-tab-content-wrap-container .ictab-setting-input-wrap label{
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.ictab-setting-input-wrap .wp-picker-container input[type=text].wp-color-picker,
+.ictab-vtab-content .wp-picker-container input[type=text].wp-color-picker,
+.ictab-field-options-wrap .wp-picker-container input[type=text].wp-color-picker{
+    height: 25px;
+}
+
+.ictab-setting-input-wrap .wp-picker-input-wrap .button,
+.ictab-vtab-content .wp-picker-input-wrap .button,
+.ictab-field-options-wrap .wp-picker-input-wrap .button{
+    margin-left: -10px;
+}
+
+/* BAckend Button Custom Button design left */
+
+.ictab-celement-sample a.ictab-custom-btn{
+    display: inline-block;
+    color: #ffffff;
+    background: #613bbe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    word-wrap: break-word;
+    display: table;
+}
+
+.ictab-celement-sample a.ictab-custom-btn span.ictab-icon-type{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+a.ictab-enable-icon-divider span.ictab-btn-title{
+    padding-left: 7px;
+}
+
+.ictab-celement-sample a.ictab-custom-btn span.ictab-btn-title{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+a.ictab-enable-icon-divider .ictab-icon-separator{
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    display: table-cell;
+}
+
+
+/* BAckend Button Custom Button design right */
+
+.ictab-celement-sample .ictab-icon-position-right span.ictab-btn-title{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+.ictab-celement-sample .ictab-icon-position-right a.ictab-custom-btn span.ictab-icon-type{
+    padding-right: 0;
+}
+
+.ictab-icon-position-right .ictab-enable-icon-divider span.ictab-icon-type{
+    padding-left: 7px;
+}
+
+/* BAckend Button Custom Button design Top */
+
+.ictab-celement-sample .ictab-icon-position-top a.ictab-custom-btn{
+    display: block;
+}
+
+.ictab-celement-sample .ictab-icon-position-top a.ictab-custom-btn span.ictab-icon-type{
+    display: block;
+}
+
+.ictab-celement-sample .ictab-icon-position-top span.ictab-icon-type{
+    display: block;
+    margin-bottom: 7px;
+    text-align: center;
+    padding: 0;
+}
+
+.ictab-celement-sample .ictab-icon-position-top a.ictab-enable-icon-divider .ictab-icon-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.ictab-celement-sample .ictab-icon-position-top a.ictab-enable-icon-divider span.ictab-btn-title{
+    padding: 0;
+}
+
+
+
+
+/* Default css */
+
+.select.ictab-select-field{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.ictab-background-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+.wp-picker-input-wrap .wp-core-ui .button.button-small{
+    height: 34px;
+}
+
+.ictab-builder-tab-content .ictab-icon-picker-preview i{
+    border: 1px solid transparent;
+    padding: 4px 12px;
+    border-radius: 0;
+    background: none;
+    font-size: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.ictab-builder-tab-content .ictab-icon-picker-preview{
+    position: relative;
+    z-index: 666;
+    cursor: pointer;
+}
+.ictab-pagination-wrap{
+    display: block;
+    margin-top: 8px;
+}
+
+.ictab-pagination-wrap a,
+.ictab-pagination-wrap span.current{
+    min-height: 23px !important;
+    background: #d7dde8;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px !important;
+    text-align: center;
+    padding: 0px 7px 2px 7px !important;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.ictab-pagination-wrap a:hover,
+.ictab-pagination-wrap span.current:hover{
+    background: #3c5470;
+    color: #fff;
+}
+
+.ictab-pagination-wrap span.current{
+    background: #3c5470 !important;
+    color: #fff;
+}
+
+.ictab_upload_own_icon .ictab-input-field input{
+    min-width: 100px !important;
+}
+.ictab_upload_own_icon .ictab-input-field em{
+    margin-right: 10px;
+}
+.ictab-tab-content-wrap .ictab-builder-tab-content[data-type="analytics-settings"] p.description{
+   margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------------------
+CTA Builder Shorcode
+------------------------------------------------------------------------------*/
+ul.ictab-usage-tab-wrap li{
+    display: inline-block;
+    width: 41%;
+    float: left;
+    background-color: #f0f1f1;
+    border-right: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+ul.ictab-usage-tab-wrap li.ictab-active{
+    background-color: #2d3e52;
+    color: #fff;
+}
+ul.ictab-usage-tab-wrap li:last-child{
+    border-right: 0;
+}
+.ictab-sc-usage-wrapper p.description{
+    clear: both;
+    font-size: 13px;
+}
+.ictab-sc-usage-wrapper .ictab-shortcode-page-wrap input{
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.ictab-shortcode-page-wrap span.ictab-copied-info{
+    color: #138450;
+}
+
+
+
+/*------------------------------------------------------------------------------
+CTA backend responsive
+------------------------------------------------------------------------------*/
+
+@media all and (max-width: 1280px) and (min-width: 1065px) {
+
+.ictab-tab-header ul li{
+    width: 16%;
+    height: 60px;
+    line-height: normal;
+    padding-top: 10px;
+    text-align: center;
+}
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+.ictab-item-inner-body .ictab-vtab-wrapper{
+    min-width: 132px;
+}
+
+.ictab_frame_header{
+    top: 354px;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 205px;
+}
+
+}
+
+
+@media all and (max-width: 1064px) and (min-width: 850px) {
+
+.ictab-tab-header ul li{
+    line-height: normal;
+    padding-top: 15px;
+    text-align: center;
+}
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+.ictab-option-wrapper .ictab-item-header-wrap span.ictab-item-title{
+    width: 96%;
+}
+
+.ictab-item-inner-body .ictab-vtab-wrapper{
+    min-width: 181px;
+}
+
+.ictab-field-options-wrap .ictab-label-field{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ictab-field-options-wrap .ictab-input-field{
+    width: 100%;
+}
+
+.ictab_frame_header{
+    top: 349px;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 205px;
+}
+
+.ictab-display-settings .ictab-components-docs-wrap{
+    margin: 10px 0;
+}
+
+
+
+}
+
+@media all and (max-width: 850px) and (min-width: 783px) {
+
+.ictab-tab-header ul li{
+    line-height: normal;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 205px;
+}
+
+ul.ictab-usage-tab-wrap li{
+    width: 46%;
+}
+
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+
+.ictab_frame_header{
+    top: 353px;
+}
+
+.ictab-builder-tab-content label.ictab-setting-label{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ictab-custom-each-element .ictab-element-title{
+    padding-left: 60px;
+}
+
+}
+
+
+@media all and (max-width: 782px) and (min-width: 667px) {
+
+.ictab-tab-header ul li{
+    line-height: normal;
+    padding-top: 15px;
+    text-align: center;
+}
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+.ictab-custom-each-element .ictab-element-title{
+    padding-left: 60px;
+}
+
+.ictab_frame_header{
+     top: 206px;
+}
+
+ul.ictab-usage-tab-wrap li{
+    width: 46%;
+}
+
+.ictab-builder-tab-content label.ictab-setting-label{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ictab-wrapper input[type=radio], input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+}
+
+.ictab-wrapper input[type=radio]:checked:before{
+    margin: 3px;
+}
+
+.ictab-shortcode-theme-wrap textarea[readonly]{
+    background: transparent;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 90%;
+    position: relative;
+    top: -21px;
+    margin-left: 30px;
+}
+
+
+.ictab-tab-content-wrap-container{
+    height: 370px !important;
+}
+
+}
+
+
+/*----------- Media query for Phone  --------------------*/
+
+
+@media only screen and (max-width: 666px) {
+
+.ictab-wrapper input[type=radio], input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+}
+
+.ictab-wrapper input[type=radio]:checked:before{
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    line-height: 16px
+}
+
+.ictab-field-options-wrap .ictab-label-field{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ictab-shortcode-theme-wrap textarea[readonly]{
+    background: transparent;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.ictab-display-settings .ictab-input-field label{
+    width: 100%;
+    display: block;
+    margin: 12px 0;
+}
+.ictab-field-options-wrap .ictab-input-field{
+    width: 100%;
+    display: block;
+}
+
+.ictab-tab-header ul li{
+    font-size: 0;
+    padding: 10px;
+    height: auto;
+    line-height: normal;
+    text-align: center;
+}
+
+.ictab-tab-header ul li .fa{
+  font-size: initial;
+}
+
+.ictab-vertical-tab-wrapper{
+    display: block;
+}
+
+.ictab-item-inner-body .ictab-vtab-wrapper{
+    display: block;
+    width: 100%;
+}
+
+.ictab-item-inner-body .ictab-vtab-content-wrapper{
+    width: 100%;
+    display: block;
+    padding-left: 0;
+}
+
+.ictab-vtab-content-wrapper .ictab-input-field select,
+.ictab-input-field input[type=text],
+.ictab-input-field input[type=url],
+.ictab-input-field input[type=number],
+.ictab-input-field select,
+.ictab-input-field textarea{
+    width: calc(100% - 50px);
+}
+
+#ictab-half-background-color .ictab-label-field{
+    width: 100%;
+}
+
+.ictab-setting-input-wrap .wp-picker-input-wrap .button,
+.ictab-vtab-content .wp-picker-input-wrap .button,
+.ictab-field-options-wrap .wp-picker-input-wrap .button{
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.ictab-option-wrapper .ictab-item-header-wrap span.ictab-item-title{
+    width: 95%;
+    display: inline-block;
+}
+
+.ictab-custom-slider-images-wrapper .ictab-each-slide .ictab-input-field input[type=text]{
+ width: 90%;
+}
+
+#ictab-custom-settings .ictab-input-field .ictab-small-width {
+    width: 100% !important;
+    margin-top: 10px;
+}
+
+#ictab-custom-settings .ictab-field-options-wrap h4{
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.ictab_main_wrapper{
+   position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    top: 30px;
+    left: 0;
+}
+
+.ictab_frame_header{
+    position: relative;
+    top: 0;
+    width: calc(100% - 30px);
+    padding-right: 0;
+}
+
+.ictab_frame_header span.ictab-main-settings-title{
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.ictab_frame_header{
+    position: relative;
+}
+
+.ictab_frame_header .ictab-close-btn{
+    position: absolute;
+    right: -30px;
+    top: 2px;
+}
+
+.ictab_frame_header .ictab-close-btn .fa{
+    display: none;
+}
+
+.ictab-tab-content-wrap-container{
+    width: calc(100% - 15px);
+    float: none;
+    padding-top: 0;
+    margin-left: 15px;
+}
+
+.ictab-builder-tab-content label.ictab-setting-label{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ictab-custom-item-panel-info{
+    position: relative;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    padding-top: 0;
+    margin-top: 10px;
+    height: auto;
+}
+
+.ictab-tab-content-wrap{
+    padding: 2px 0 30px 0px;
+}
+
+.ictab-element-setting-wrap .ictab-setting-input-wrap label{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+}
+
+
+/*----------- Media query for Ipad Landscape  --------------------*/
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.ictab-tab-header ul li{
+    line-height: normal;
+    padding-top: 15px;
+    text-align: center;
+}
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+
+.ictab_frame_header{
+    top: 422px;
+}
+
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 0;
+}
+
+.ictab-field-options-wrap .ictab-input-field{
+    width: 98%;
+    margin-top: 10px;
+}
+
+.ictab-custom-each-element .ictab-element-title{
+    padding-left: 65px;
+}
+
+.ictab-tab-content-wrap-container{
+    height: 270px !important;
+}
+
+}
+
+/*----------- Media query for Ipad portrait  --------------------*/
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.ictab-tab-header ul li{
+    line-height: normal;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.ictab-tab-header ul li .fa{
+    display: block;
+}
+
+ul.ictab-usage-tab-wrap li{
+    width: 47%;
+}
+
+.ictab-custom-each-element .ictab-element-title{
+    padding-left: 72px;
+}
+
+.ictab_frame_header{
+     top: 562px;
+}
+
+.ictab-builder-tab-content label.ictab-setting-label{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.ictab-setting-input-wrap .wp-picker-container input[type=text].wp-color-picker,
+.ictab-vtab-content .wp-picker-container input[type=text].wp-color-picker,
+.ictab-field-options-wrap .wp-picker-container input[type=text].wp-color-picker{
+    height: 35px;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 205px;
+}
+
+}
+
+/*------------------------------------------------------------------------------
+CTA ictab-vtab-wrapper animation Default
+------------------------------------------------------------------------------*/
+
+.ictab-vtab-content-wrapper .ictab-button-main-wrap a.button-3d-flip::after{
+    background: #000;
+    color: #FFF;
+}
+
+.ictab-vtab-content-wrapper .ictab-animation-effect .ictab-button-wrap a.button-3d-flip{
+    background-color: transparent;
+}
+
+.ictab-vtab-content-wrapper .ictab-animation-effect .ictab-button-wrap a.button-border-line span:before,
+.ictab-vtab-content-wrapper .ictab-animation-effect .ictab-button-wrap a.button-border-line span:after{
+    bottom: 0;
+}
+
+.ictab-vtab-content-wrapper .ictab-animation-effect .ictab-button-wrap a.button-line-through:hover span:before{
+    background: #fff;
+}
+
+
+
+
+/*----------- Media query for Ipad pro Portrait  --------------------*/
+
+@media only screen and (min-device-width: 1024px)
+and (max-device-height: 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait)  {
+
+.ictab_frame_header{
+     top: 751px;
+}
+ul.ictab-usage-tab-wrap li{
+    width: 47%;
+}
+
+.ictab-custom-each-element .ictab-element-title{
+    padding-left: 72px;
+}
+
+.ictab-builder-tab-content .ictab-show-icon-sets {
+    width: 30%;
+    position: relative;
+    top: -21px;
+    margin-left: 205px;
+}
+
+.ictab-tab-content-wrap-container{
+    height: 425px !important;
+}
+
+
+}
+
+
+
+/*----------- Media query for Ipad pro Landscape  --------------------*/
+
+@media only screen
+and (min-device-width: 1366px)
+and (max-device-height: 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape)  {
+
+.ictab_frame_header{
+     top: 563px;
+}
+.ictab-item-inner-body .ictab-vtab-wrapper{
+     width: 255px;
+}
+
+.ictab-tab-content-wrap-container{
+    height: 360px !important;
+}
+
+}
+.upgrade-action-wrap{
+    text-align:center;
+}
+
+
+
